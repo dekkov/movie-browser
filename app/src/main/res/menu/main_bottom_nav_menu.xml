@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/features"
+        android:title="Featured Movies"
+        android:icon="@drawable/ic_action_featured" />
+    <item
+        android:id="@+id/movie_favorites"
+        android:title="@string/label_favorite_movies"
+        android:icon="@drawable/ic_action_favorite" />
+    <item
+        android:id="@+id/movie_search"
+        android:title="@string/label_search_movies"
+        android:icon="@drawable/ic_action_add_movie" />
+    <item
+        android:id="@+id/movie_watchlist"
+        android:title="@string/label_watchlist"
+        android:icon="@drawable/ic_action_watchlist" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_action_settings"
+        android:title="@string/label_settings"/>
+</menu>

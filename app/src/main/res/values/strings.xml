@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Group 5 Final Project</string>
+
+    <string name="frag_label_search">Movie Search</string>
+    <string name="search_hint">Movie Name…</string>
+    <string name="search">Search</string>
+
+    <string name="frag_label_favorites">Favorites</string>
+    <string name="frag_label_watchlist">Watchlist</string>
+
+    <string name="loading_error">Unable to fetch movie data.  Error message: %1$s</string>
+
+    <string name="label_favorite_movies">Favorite Movies</string>
+    <string name="label_search_movies">Search Movies</string>
+    <string name="label_watchlist">Watchlist</string>
+    <string name="omdb_api_key">1d310886</string>
+    <string name="label_summary">Summary</string>
+
+
+    <string name="label_save_poster_button">Save Poster Image</string>
+    <string name="pref_category_year_bounds">Search Year Bounds</string>
+    <string name="pref_start_year_key">start year</string>
+    <string name="pref_start_year_title">Start Year</string>
+    <string name="pref_end_year_key">end year</string>
+    <string name="pref_end_year">End Year</string>
+    <string name="label_settings">Settings</string>
+
+
+</resources>

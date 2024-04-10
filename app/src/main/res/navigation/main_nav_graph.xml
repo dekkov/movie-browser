@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/features"
+    >
+
+    <!-- STILL NEED TO ADD FRAGMENTS + NAVIGATION -->
+
+    <fragment
+        android:id="@+id/movie_search"
+        android:name="edu.oregonstate.cs492.finalproject.ui.MovieSearchFragment"
+        android:label="@string/frag_label_search">
+    </fragment>
+
+    <fragment
+        android:id="@+id/features"
+        android:name="edu.oregonstate.cs492.finalproject.ui.TMDBFragment"
+        android:label="Featured Movies">
+
+        <action
+            android:id="@+id/navigate_to_movie_detail"
+            app:destination="@+id/movie_detail"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/movie_detail"
+        android:name="edu.oregonstate.cs492.finalproject.ui.TMDBDetailFragment"
+        android:label="Movie Detail">
+        <argument
+            android:name="movie"
+            app:argType="edu.oregonstate.cs492.finalproject.data.TMDBAPI.TMDBMovieItem"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/movie_favorites"
+        android:name="edu.oregonstate.cs492.finalproject.ui.MovieFavoritesFragment"
+        android:label="@string/frag_label_favorites">
+    </fragment>
+
+    <fragment
+        android:id="@+id/movie_watchlist"
+        android:name="edu.oregonstate.cs492.finalproject.ui.MovieWatchlistFragment"
+        android:label="@string/frag_label_watchlist">
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="edu.oregonstate.cs492.finalproject.ui.SettingFragment"
+        android:label="@string/label_settings">
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/navigation_dialog_fragment"
+        android:name="edu.oregonstate.cs492.finalproject.ui.PopUpFragment"
+        tools:layout="@layout/popup_overview"/>
+
+
+
+</navigation>
